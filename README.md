@@ -26,8 +26,9 @@ Function:
 -----------------------------
 
 Our web-interface enables users to pick their favorite player to form a team. When the sign-in interface shows, the user is prompted to enter the username and password. The input will be checked by the database to ensure matched results exist. Otherwise the user will be guided to create own account, and the user information table will be updated. The users can filter the player by characteristics to find best matched players, and them to collection. Such function is implemented in the backend by querying the database according to user's input. Users can pick players based on their positions, scoring abilities, teams and so on. Then those players will go into users’ carts, and users could check out by using game coins. After purchasing the players, their own teams will be updated, which is realized by updating the corresponding table in the database. Users can view their team lineup by clicking a “My Collection” button on the screen, which is realized by querying the ‘MyCollection’ table in the database.
+
 Screenshots:
 --------------------
-(img/1.png)
-(img/2.png)
-(img/3.png)
+![login](img/1.png)
+![player](img/2.png)
+![cart](img/3.png)
