@@ -35,11 +35,13 @@ if($result->num_rows > 0){
 	$row = $result->fetch_assoc();
 
 	if(password_verify($login_password,$row['hashingPassword'])){
-
-	$link = "<script>window.location.href = 'players.php?customerID=". $login_userID ."'</script>";
-	echo $link;}else{
-		echo "<script type='text/javascript'>alert('Check your password and userID');</script>";
+		$link = "<script>window.location.href = 'players.php?customerID=". $login_userID ."'</script>";
+		echo $link;
+	}else{
+		echo "<script type='text/javascript'>alert('Check your password');</script>";
 	}
+}else{
+	echo "<script type='text/javascript'>alert('UserID not exists');</script>";
 }	
 
 if(isset($_POST['userID']) && isset($_POST['name']) && isset($_POST['password'])){
