@@ -1,0 +1,11 @@
+LOAD DATA LOCAL INFILE "nbaTeams.dat"
+INTO TABLE nbaTeams
+FIELDS TERMINATED BY "<>";
+
+LOAD DATA LOCAL INFILE "playerCard.dat"
+INTO TABLE playerCard
+FIELDS TERMINATED BY "<>";
+
+LOAD DATA LOCAL INFILE "serialLibrary.dat"
+INTO TABLE serialLibrary
+FIELDS TERMINATED BY "<>";
